@@ -1,0 +1,6 @@
+$content-width-full: 1200px;
+
+@mixin full-size() {
+  width: $content-width-full;
+  margin: 0 auto;
+}

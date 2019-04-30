@@ -1,34 +1,5 @@
-.logo {
-  height: 41px;
-}
-
-.logo_position {
-  padding-top: 56px;
-}
-
-.logo__img {
-  float: left;
-}
-
-.logo__text {
-  margin: 8px 0 0 51px;
-  font-family: Merriweather;
-  font-size: 21px;
-  font-weight: 900;
-  font-style: italic;
-  font-stretch: normal;
-  color: #ffffff;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 1800px;
-  margin: 0 auto;
-}
+@import "dev/_dev.scss";
+@import "_variables";
 
 .page-head {
   height: 951px;
@@ -36,8 +7,7 @@ html, body {
 }
 
 .page-head__container {
-  width: 1200px;
-  margin: 0 auto;
+  @include full-size;
   position: relative;
 }
 
