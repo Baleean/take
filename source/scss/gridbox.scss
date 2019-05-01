@@ -1,0 +1,92 @@
+@import "dev/_dev.scss";
+@import "variables";
+.gridbox {
+  @include full-size;
+}
+
+.gridbox__container {
+  clear: both;
+  display: grid;
+  grid-template-rows: repeat(2, 278px);
+  grid-template-columns: repeat(4, 400px);
+}
+
+.gridbox__item {
+  padding: 0 30px 0 30px;
+}
+
+.gridbox__item_long {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.gridbox__item_design {
+  background-color: #f5989d;
+}
+
+.gridbox__item_built {
+  background-color: #615f7d;
+}
+
+.gridbox__item_clients {
+  background: url("../img/Layer 6.png");
+}
+
+.gridbox__item_shoo {
+  background-color: #bd8cbf;
+}
+
+.gridbox__item_sign-up {
+  background: url("../img/Layer 7.png");
+}
+
+.gridbox__item_pictures {
+  background-color: #82ca9c;
+}
+
+.gridbox__item_start {
+  background: url("../img/Layer 14.png");
+}
+
+.gridbox__title {
+  font-family: Open Sans;
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.gridbox__text {
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  height: 60px;
+  margin-bottom: 40px;
+  min-width: 300px;
+  max-width: 440px;
+}
+
+.gridbox__link {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 60px;
+}
