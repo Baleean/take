@@ -9,6 +9,50 @@
 }
 
 .details__title {
-  
+  font-family: Open Sans;
+  font-size: 35px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.69;
+  letter-spacing: normal;
+  text-align: left;
+  color: #222626;
+  margin-top: 100px;
+}
+
+.details__content {
+  display: grid;
+  grid-template-columns: repeat(4, 265px);
+  justify-content: space-between;
+}
+
+.details__article {
+
+}
+
+.details__article-title {
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #67676d;
+
+}
+
+.details__article-text {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #959595;
 }
 
