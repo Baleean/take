@@ -48,6 +48,10 @@
   color: #ffffff;
 }
 
+.description {
+  height: 400px;
+}
+
 .description_position {
   width: 1200px;
   margin: 0 auto;
