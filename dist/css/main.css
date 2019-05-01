@@ -1,3 +1,53 @@
+.about-options {
+  height: 874px;
+  background: url("../img/Layer 8.png");
+}
+
+.about-options__content {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 380px;
+}
+
+.about-options__title {
+  width: 530px;
+  font-family: Open Sans;
+  font-size: 60px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.about-options__text {
+  width: 440px;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.about-options__link {
+  text-decoration: none;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
 .description_position {
   width: 1200px;
   margin: 0 auto;
@@ -38,6 +88,7 @@
 .details_position {
   width: 1200px;
   margin: 0 auto;
+  margin-bottom: 160px;
 }
 
 .details__title {

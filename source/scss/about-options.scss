@@ -1,59 +1,50 @@
 @import "variables";
 
-.details {
-
+.about-options {
+  height: 874px;
+  background: url("../img/Layer 8.png");
 }
 
-.details_position {
+.about-options__content {
   @include full-size;
-  margin-bottom: 160px;
+  padding-top: 380px;
 }
 
-.details__title {
+.about-options__title {
+  width: 530px;
   font-family: Open Sans;
-  font-size: 35px;
+  font-size: 60px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  line-height: 0.69;
+  line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #222626;
-  margin-top: 100px;
+  color: #ffffff;
 }
 
-.details__content {
-  display: grid;
-  grid-template-columns: repeat(4, 265px);
-  justify-content: space-between;
-}
-
-.details__article {
-
-}
-
-.details__article-title {
+.about-options__text {
+  width: 440px;
   font-family: Open Sans;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.85;
   letter-spacing: normal;
   text-align: left;
-  color: #67676d;
-
+  color: #ffffff;
 }
 
-.details__article-text {
+.about-options__link {
+  text-decoration: none;
   font-family: Open Sans;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.71;
   letter-spacing: normal;
   text-align: left;
-  color: #959595;
+  color: #ffffff;
 }
-
