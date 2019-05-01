@@ -1,0 +1,67 @@
+@import "variables";
+
+.cellar {
+  height: 608px;
+  background-color: #192431;
+}
+
+.cellar__content {
+  @include full-size;
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
+  justify-content: space-between;
+  padding-top: 130px;
+}
+
+.cellar__about {
+
+}
+
+.cellar__form {
+
+}
+
+.cellar__title {
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f6f7fa;
+}
+
+.cellar__input {
+  border-radius: 2px 0 0 2px;
+  background-color: #f6f7fa;
+  width: 470px;
+  height: 58px;
+  border: none;
+
+}
+
+.cellar__button {
+  background: #82ca9c url("../img/ok.svg") no-repeat;
+  background-position: 15px 10px;
+  border-radius: 0 2px 2px 0;
+  width: 70px;
+  height: 60px;
+  border: none;
+  margin-left: -3px;
+}
+
+.cellar__comment {
+  width: 340px;
+  margin-top: 20px;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #57697f;
+}

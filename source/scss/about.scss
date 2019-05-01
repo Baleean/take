@@ -1,0 +1,43 @@
+.about {
+
+}
+
+.about__description {
+  margin-bottom: 45px;
+}
+
+.about__text {
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f6f7fa;
+}
+
+.about__themes {
+  display: grid;
+  grid-template-columns: repeat(3, 105px);
+  justify-content: space-between;
+}
+
+.about__block-links {
+
+}
+
+.about__link {
+  display: block;
+  text-decoration: none;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f6f7fa;
+}
