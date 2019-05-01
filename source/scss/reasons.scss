@@ -1,0 +1,57 @@
+@import "variables";
+
+.reasons {
+  height: 536px;
+  background-color: #82ca9c;
+}
+
+.reasons__content {
+  padding-top: 125px;
+  @include full-size;
+}
+
+.reasons__title {
+  font-family: Open Sans;
+  font-size: 35px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.69;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.reasons__block-articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+}
+
+.reasons__article {
+
+}
+
+.reasons__article-title {
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.reasons__article-text {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
