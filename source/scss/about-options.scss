@@ -8,6 +8,14 @@
 .about-options__content {
   @include full-size;
   padding-top: 380px;
+  @media screen and (max-width: 1400px) {
+    padding-top: 150px;
+    width: 991px;
+  }
+  @media screen and (max-width: 991px) {
+    padding-top: 100px;
+    width: 800px;
+  }
 }
 
 .about-options__title {

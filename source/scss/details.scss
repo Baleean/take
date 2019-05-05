@@ -20,12 +20,25 @@
   text-align: left;
   color: #222626;
   margin-top: 100px;
+  @media screen and (max-width: 1200px) {
+    padding-left: 10%;
+  }
 }
 
 .details__content {
   display: grid;
   grid-template-columns: repeat(4, 265px);
   justify-content: space-between;
+  @media screen and (max-width: 1200px) {
+    width: 991px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    grid-column-gap: 30px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 991px) {
+    width: 800px;
+  }
 }
 
 .details__article {

@@ -8,6 +8,12 @@
 .reasons__content {
   padding-top: 125px;
   @include full-size;
+  @media screen and (max-width: 1400px) {
+    width: 991px;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 768px;
+  }
 }
 
 .reasons__title {

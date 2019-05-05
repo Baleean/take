@@ -1,6 +1,20 @@
 $content-width-full: 1200px;
 
 @mixin full-size() {
-  width: $content-width-full;
+  max-width: 1200px;
+  min-width: 800px;
   margin: 0 auto;
+}
+
+@mixin large() {
+  width: 992px;
+
+}
+
+@mixin medium() {
+  width: 768px;
+}
+
+@mixin small() {
+  width: 576px;
 }

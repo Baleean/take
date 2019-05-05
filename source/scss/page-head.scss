@@ -3,17 +3,39 @@
 
 .page-head {
   height: 951px;
-  background-image: url("../img/bg-header.png");
+  background: url("../img/bg-header.png"), no-repeat;
+  background-size: cover;
+  @media screen and (max-width: 1600px) {
+    background: url("../img/bg-header.png"), no-repeat, 50px;
+  }
 }
 
 .page-head__container {
   @include full-size;
   position: relative;
+  @media screen and (max-width: 991px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .page-head__picture {
   margin-top: 350px;
   width: 440px;
+  @media screen and (max-width: 1600px) {
+    margin-top: 250px;
+  }
+  @media screen and (max-width: 1400px) {
+    margin-left: 10%;
+  }
+  @media screen and (max-width: 1200px) {
+
+  }
+  @media screen and (max-width: 991px) {
+    margin: 0 50px;
+    width: 100%;
+  }
+
 }
 
 .page-head__picture-perfect {
@@ -27,6 +49,9 @@
   text-align: left;
   color: #ffffff;
   margin-bottom: 21px;
+  @media screen and (max-width: 991px) {
+    margin: 0;
+  }
 }
 
 .page-head__picture-text {
@@ -46,4 +71,16 @@
   position: absolute;
   left: 492px;
   top: 261px;
+  @media screen and (max-width: 1600px) {
+    width: 600px;
+    left: 600px;
+    top: 30px;
+  }
+  @media screen and (max-width: 1200px) {
+    left: 400px;
+  }
+  @media screen and (max-width: 991px) {
+    top: 175px;
+    left: 100px;
+  }
 }

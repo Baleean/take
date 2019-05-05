@@ -4,6 +4,7 @@ html, body {
 }
 
 .container {
-  width: 1800px;
+  max-width: 1800px;
+  min-width: 768px;
   margin: 0 auto;
 }

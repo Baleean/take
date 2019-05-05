@@ -4,9 +4,24 @@
 }
 
 .about-options__content {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 800px;
   margin: 0 auto;
   padding-top: 380px;
+}
+
+@media screen and (max-width: 1400px) {
+  .about-options__content {
+    padding-top: 150px;
+    width: 991px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about-options__content {
+    padding-top: 100px;
+    width: 800px;
+  }
 }
 
 .about-options__title {
@@ -170,17 +185,43 @@
   background-color: #f6f7fa;
 }
 
+@media screen and (max-width: 1200px) {
+  .buy {
+    height: 800px;
+  }
+}
+
 .buy__content {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 800px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 570px);
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1200px) {
+  .buy__content {
+    grid-template-columns: repeat(2, 450px);
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .buy__content {
+    grid-template-columns: 1fr;
+  }
+}
+
 .buy__item {
   height: 380px;
   margin-top: 103px;
+}
+
+@media screen and (max-width: 1200px) {
+  .buy__item {
+    margin-top: 20px;
+  }
 }
 
 .buy__item:hover {
@@ -194,12 +235,36 @@
 }
 
 .cellar__content {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 800px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 570px);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   padding-top: 130px;
+}
+
+@media screen and (max-width: 1600px) {
+  .cellar__content {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cellar__content {
+    padding: 30px 0;
+    width: 991px;
+    grid-template-columns: 750px;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cellar__content {
+    width: 768px;
+    grid-template-columns: 750px;
+    justify-content: space-evenly;
+  }
 }
 
 .cellar__title {
@@ -251,8 +316,22 @@
 }
 
 .description_position {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 800px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .description_position {
+    margin: 0 10%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .description_position {
+    width: 800px;
+    margin: 0 auto;
+  }
 }
 
 .description__title {
@@ -268,7 +347,33 @@
   margin-top: 110px;
 }
 
+@media screen and (max-width: 1200px) {
+  .description__title {
+    width: 800px;
+    margin: 110px auto 20px auto;
+  }
+}
+
 .description__text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1200px) {
+  .description__text {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .description__text {
+    grid-template-columns: 1fr;
+    width: 800px;
+  }
+}
+
+.description__text-item {
   font-family: Open Sans;
   font-size: 14px;
   font-weight: normal;
@@ -278,17 +383,23 @@
   letter-spacing: normal;
   text-align: left;
   color: #959595;
-  width: 570px;
   margin-right: 30px;
   float: left;
 }
 
 .description__text_position {
-  margin-top: 80px;
+  margin-top: 75px;
+}
+
+@media screen and (max-width: 1200px) {
+  .description__text_position {
+    margin-top: 0;
+  }
 }
 
 .details_position {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 800px;
   margin: 0 auto;
   margin-bottom: 160px;
 }
@@ -306,10 +417,32 @@
   margin-top: 100px;
 }
 
+@media screen and (max-width: 1200px) {
+  .details__title {
+    padding-left: 10%;
+  }
+}
+
 .details__content {
   display: grid;
   grid-template-columns: repeat(4, 265px);
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  .details__content {
+    width: 991px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    grid-column-gap: 30px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .details__content {
+    width: 800px;
+  }
 }
 
 .details__article-title {
@@ -336,16 +469,42 @@
   color: #959595;
 }
 
-.gridbox {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .gridbox__container {
+  margin: 0 auto;
   clear: both;
   display: grid;
   grid-template-rows: repeat(2, 278px);
-  grid-template-columns: repeat(4, 400px);
+  grid-template-columns: repeat(4, 1fr);
+  width: 1200px;
+  grid-auto-rows: 278px;
+  grid-auto-columns: 1fr;
+}
+
+@media screen and (max-width: 1700px) {
+  .gridbox__container {
+    margin: 0 10%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .gridbox__container {
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gridbox__container {
+    width: 800px;
+    margin: 30px auto;
+    grid-template-columns: repeat(2, 400px);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .gridbox__container {
+    grid-template-columns: repeat(2, 400px);
+  }
 }
 
 .gridbox__item {
@@ -355,6 +514,20 @@
 .gridbox__item_long {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+@media screen and (max-width: 1600px) {
+  .gridbox__item_long {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gridbox__item_long {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .gridbox__item_design {
@@ -383,6 +556,22 @@
 
 .gridbox__item_start {
   background: url("../img/Layer 14.png");
+}
+
+@media screen and (max-width: 1600px) {
+  .gridbox__item_start {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background: url("../img/Layer 15.png");
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gridbox__item_start {
+    background: url("../img/Layer 14.png");
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
 
 .gridbox__title {
@@ -436,6 +625,18 @@
   padding-top: 56px;
 }
 
+@media screen and (max-width: 1400px) {
+  .logo_position {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .logo_position {
+    margin-left: 10%;
+  }
+}
+
 .logo__img {
   float: left;
 }
@@ -456,24 +657,59 @@ html, body {
 }
 
 .container {
-  width: 1800px;
+  max-width: 1800px;
+  min-width: 768px;
   margin: 0 auto;
 }
 
 .page-head {
   height: 951px;
-  background-image: url("../img/bg-header.png");
+  background: url("../img/bg-header.png"), no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1600px) {
+  .page-head {
+    background: url("../img/bg-header.png"), no-repeat, 50px;
+  }
 }
 
 .page-head__container {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 800px;
   margin: 0 auto;
   position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  .page-head__container {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .page-head__picture {
   margin-top: 350px;
   width: 440px;
+}
+
+@media screen and (max-width: 1600px) {
+  .page-head__picture {
+    margin-top: 250px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .page-head__picture {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .page-head__picture {
+    margin: 0 50px;
+    width: 100%;
+  }
 }
 
 .page-head__picture-perfect {
@@ -487,6 +723,12 @@ html, body {
   text-align: left;
   color: #ffffff;
   margin-bottom: 21px;
+}
+
+@media screen and (max-width: 991px) {
+  .page-head__picture-perfect {
+    margin: 0;
+  }
 }
 
 .page-head__picture-text {
@@ -508,6 +750,27 @@ html, body {
   top: 261px;
 }
 
+@media screen and (max-width: 1600px) {
+  .page-head__phone {
+    width: 600px;
+    left: 600px;
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .page-head__phone {
+    left: 400px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .page-head__phone {
+    top: 175px;
+    left: 100px;
+  }
+}
+
 .reasons {
   height: 536px;
   background-color: #82ca9c;
@@ -515,8 +778,21 @@ html, body {
 
 .reasons__content {
   padding-top: 125px;
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 800px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .reasons__content {
+    width: 991px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .reasons__content {
+    width: 768px;
+  }
 }
 
 .reasons__title {
